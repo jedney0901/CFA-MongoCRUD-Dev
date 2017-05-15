@@ -13,11 +13,11 @@ var mongoose = require('mongoose');
 
 var app = express();
 
-const mlabpassword = process.env.DBPW
-const mlabuser = process.env.DBUSER
+const mlabpassword = process.env.DBPW;
+const mlabuser = process.env.DBUSER;
 
 // Connecting to a DB that will be called recipes.
-mongoose.connect(`mongodb://${mlabuser}:${mlabpassword}@ds143241.mlab.com:43241/mongo-crud`)
+mongoose.connect(`mongodb://jedney0901:${mlabpassword}@ds143241.mlab.com:43241/mongo-crud`);
 const { connection: db } = mongoose;
 
 db.on('error', console.error.bind(console, 'connection error:'));
