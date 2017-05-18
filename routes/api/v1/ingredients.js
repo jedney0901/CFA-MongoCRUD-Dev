@@ -8,10 +8,10 @@ router.get('/', ingredientController.getIngredients);
 
 router.post('/', ingredientController.createIngredients);
 
-router.get('/ingredients/:id/edit', ingredientController.editIngredients);
+router.get('/api/v1ingredients/:id/edit', ingredientController.editIngredients);
 
-router.post('/ingredients/:id/edit', ingredientController.updateIngredients);
+router.post('/api/v1/ingredients/:id/edit', ingredientController.updateIngredients);
 
-router.post ('/ingredients/:id/delete', ingredientController.deleteIngredients);
+router.post ('/api/v1/ingredients/:id/delete', ingredientController.deleteIngredients);
 
 module.exports = router;
